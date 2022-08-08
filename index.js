@@ -170,6 +170,6 @@ app.all("*", (req, res, next) => {
 
 //This is to set the express app server running on the port spectified and telling us what it should do when it is successfull
 const port = process.env.PORT;
-app.listen([port, () => {
-  console.log("Listening on port: 3000");
+app.listen(port, () => {
+  console.log("Listening on port: ", port);
 });
