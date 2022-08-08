@@ -138,7 +138,7 @@ app.use((req, res, next) => {
 
 //This is setting our route which is to tell the express app what to do when any of the following routes are asked for via browser.
 app.get("/", (req, res) => {
-  res.render("Home");
+  res.render("home");
 });
 
 // app.get("/fakeuser", async (req, res) => {
