@@ -36,6 +36,12 @@ module.exports.registerUser = async (req, res) => {
     res.redirect("/register");
   }
 };
+module.exports.demoUserLogin = async (req, res) => {
+  req.flash("success", "Welcome to LetsCamp, Stranger!");
+  console.log("demo user accessed");
+  res.redirect("/campgrounds");
+};
+
 module.exports.logoutUser = function (req, res, next) {
   req.logout();
   req.flash("success", "Logged you out");

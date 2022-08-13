@@ -59,3 +59,9 @@ module.exports.isReviewAuthor = async (req, res, next) => {
   }
   next();
 };
+
+module.exports.addDemoUser = (req, res, next) => {
+  req.body.username = "demo";
+  req.body.password = "demo";
+  next();
+};
