@@ -69,6 +69,7 @@ app.use(
         "data:",
         "https://res.cloudinary.com/dnl8zm7fi/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
         "https://images.unsplash.com/",
+        "https://cdn.jsdelivr.net",
       ],
       fontSrc: ["'self'", ...fontSrcUrls],
     },

@@ -44,3 +44,14 @@ body {
   background-color: white;
   color: black;
 }
+a svg {
+  fill: white;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+}
+@media only screen and (max-width: 768px) {
+  .cover-container {
+    max-width: 100vw;
+  }
+}
