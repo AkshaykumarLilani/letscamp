@@ -77,8 +77,8 @@ app.use(
 );
 app.use(helmet.crossOriginEmbedderPolicy({ policy: "credentialless" }));
 const mongoose = require("mongoose");
-const db_url = process.env.DB_URL || "mongodb://localhost:27017/lets-camp"; //process.env.DB_URL;
-const secret = process.env.SECRET || "thisshouldbeabettersecret";
+const db_url = process.env.DB_URL;
+const secret = process.env.SECRET;
 //mongodb://localhost:27017/lets-camp
 const store = new MongoStore({
   mongoUrl: db_url,
